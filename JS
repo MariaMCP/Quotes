@@ -1,0 +1,74 @@
+//Replace the quotes with whatever quotes you would like. You can copy and paste them from a source instead of having to type them. Make sure to follow this format ["quote1", "quote2", "quote3"]; as this creates an object that we can use in our function.
+var myQuotes = [
+  "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real? ~Albus Dumbledore",
+  "It is our choices, Harry, that show what we truly are, far more than our abilities. ~Albus Dumbledore",
+  "Happiness can be found even in the darkest of times, if one only remembers to turn on the light. ~Albus Dumbledore",
+  "And now, Harry, let us step out into the night and pursue that flighty temptress, adventure. ~Albus Dumbledore",
+  "It matters not what someone is born, but what they grow to be. ~Albus Dumbledore",
+  "The consequences of our actions are always so complicated, so diverse, that predicting the future is a very difficult business indeed. ~Albus Dumbledore",
+  "It does not do to dwell on dreams and forget to live. ~Albus Dumbledore",
+  "Fear of a name increases fear of the thing itself. ~Albus Dumbledore",
+  "There are all kinds of courage. It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends. ~Albus Dumbledore",
+  "People find it far easier to forgive others for being wrong than being right. ~Albus Dumbledore",
+  "We are only as strong as we are united, as weak as we are divided. ~Albus Dumbledore",
+  "Differences of habit and language are nothing at all if our aims are identical and our hearts are open. ~Albus Dumbledore",
+  "It is important to fight, and fight again, and keep fighting, for only then could evil be kept at bay, though never quite eradicated. ~Albus Dumbledore",
+  "The truth, it is a beautiful and terrible, and should therefore be treated with great caution. ~Albus Dumbledore",
+  "Curiosity is not a sin...but we should exercise caution with our curiosity. ~Albus Dumbledore",
+  "Numbing the pain for a while will make it worse when you finally feel it. ~Albus Dumbledore",
+  "Understanding is the first step to acceptance, and only with acceptance can there be recovery. ~Albus Dumbledore",
+  "Youth cannot know how age thinks and feels, but old men are guilty if they forget what it was to be young. ~Albus Dumbledore",
+  "You think the dead we loved truly ever leave us? You think that we don't recall them more clearly in times of great trouble? ~Albus Dumbledore",
+  "Do not pity the dead, Harry, pity the living, and above all those who live without love. ~Albus Dumbledore",
+  "It is the unknown we fear when we look upon death and darkness, nothing more. ~Albus Dumbledore",
+  "Ah, music, a magic beyond all we do here. ~Albus Dumbledore",
+  "Words are, in my not so humble opinion, our most inexhausible source of magic, capable of both influencing injury, and remedying it. ~Albus Dumbledore",
+  "Happiness can be found, even in the darkest of times, if only one remembers to turn on the light. ~Albus Dumbledore",
+  "No good sittin' worryin' abou' it. What's comin' will come, an' we'll meet it when it does. ~Rubius Hagrid",
+  "I am what I am an' I'm not ashamed. 'Never be ashamed,' my ol' dad used ter say, 'there's some who'll hold it against you, but they're not worth bothern' with. ~Rubius Hagrid",
+  "What you fear most of all is - fear. Very wise. ~Remus Lupin",
+  "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals. ~Sirius Black",
+  "Things we love have a way of coming back to us in the end, if not always in the way we expect. ~Luna Lovegood",
+  "We must all face the choice between what is right and what is easy. ~Albus Dumbledore",
+  "The stories we love best live in us forever. ~J.K. Rowling",
+  "I solemly swear that I am up to no good. ~Moony, Wormtail, Padfoot, & Prongs",
+  "We've all got both light and dark inside of us. What matters is the part we choose to act on. ~Sirius Black",
+  "You do care. You care so much you feel as though you will bleed to death with the pain of it. ~Albus Dumbledore",
+  "I want to commit the murder I was imprisoned for. ~Sirius Black",
+  "To the well-organized mind, death is but the next great adventure. ~Albus Dumbledore",
+  "Just because you've got the emotional range of a teaspoon doesn't mean we all have. ~Hermione Granger",
+  "In dreams, we enter a world that's entirely our own. Let them swim in the deepest ocean or glide over the highest cloud. ~Albus Dumbledore",
+  "Anything is possible if you've got enough nerve. ~Ginny Weasley",
+  "Don't let the muggles get you down. ~Ronald Weasley",
+  "We must try not to sink beneath our anguish, but battle on. ~Albus Dumbledore",
+  "To have been loved so deeply, even though the person who loved us is gone, will give us some protection forever. ~Albus Dumbledore",
+  "Dobby never meant to kill. Dobby only meant to maim, or seriously injure. ~Dobby the House Elf",
+  "Working hard is important. But there is something that matters even more: believing in yourself. ~Harry Potter",
+  "It is important to remember that we all have magic inside us. ~J.K. Rowling",
+  "Always ~Severus Snape",
+  "What is life without a little risk? ~Sirius Black",
+  "Young girls are told you have to be the delicate princess. Hermione taught them that you can be the warrior. ~Emma Watson",
+  "The mind is not a book, to be opened at will and examined at leisure. ~Severus Snape",
+  "It is the quality of ones convictions that determines success, not the number of followers. ~Remus Lupin",
+  "It was Hermione's journey as much as Harry's at the end. ~J.K. Rowling",
+  "Master has presented Dobby with clothes! Dobby is free. ~Dobby the House Elf",
+  "I wonder, how you expect to gain an idea of my usual teaching methods if you continue to interrupt me? You see, I do not generally permit people to talk when I am talking. ~Professor McGonagall",
+  "Take Charms, and I shall drop Augusta a line reminding her that just because she failed her Charms O.W.L., the subject is not necessarily worthless. ~Professor McGonagall",
+  "Have a biscuit, Potter. ~Professor McGonagall",
+  "Are you quite sure you wouldn't like a cough drop, Dolores? ~Professor McGonagall",
+  "I assure you that if you die, you need not hand it in. ~Professor McGonagall",
+  "Potter, take Weasley with you, he looks far too happy over there. ~Professor McGonagall",
+  "Only the difference between truth and lies is courage and cowardice. ~Professor McGonagall",
+  "Perhaps it would be more useful if I were to transfigure Mr. Potter and yourself into a pocket watch? ~Professor McGonagall",
+  "There's no need to call me sir, Professor. ~Harry Potter"];
+function newQuote(){
+  //We create a variable named randomNumber.
+  var randomNumber = Math.floor(Math.random()*(myQuotes.length));
+  //randomNumber equals the value of 0-1 times myQuotes.length rounded down. Math.random will always return a decimal less than one. Since objects start at 0, this is perfect. randomNumber can equal 0-60 with my example.
+  
+  //This displays the quote on your HTML section with the id quoteDisplay
+  document.getElementById('quoteDisplay').innerHTML = myQuotes[randomNumber];
+  //If you open the console part, you can see your myQuotes length and the random number. This does nothing except give you information. 
+  console.log(myQuotes.length)
+  console.log(randomNumber)
+}
