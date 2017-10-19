@@ -1,4 +1,5 @@
-//Replace the quotes with whatever quotes you would like. You can copy and paste them from a source instead of having to type them. Make sure to follow this format ["quote1", "quote2", "quote3"]; as this creates an object that we can use in our function.
+//Replace the quotes with whatever quotes you would like. You can copy and paste them from a source instead of having to type them. 
+//Make sure to follow this format ["quote1", "quote2", "quote3"]; as this creates an object that we can use in our function.
 var myQuotes = [
   "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real? ~Albus Dumbledore",
   "It is our choices, Harry, that show what we truly are, far more than our abilities. ~Albus Dumbledore",
@@ -61,14 +62,27 @@ var myQuotes = [
   "Only the difference between truth and lies is courage and cowardice. ~Professor McGonagall",
   "Perhaps it would be more useful if I were to transfigure Mr. Potter and yourself into a pocket watch? ~Professor McGonagall",
   "There's no need to call me sir, Professor. ~Harry Potter"];
+
 function newQuote(){
   //We create a variable named randomNumber.
+
   var randomNumber = Math.floor(Math.random()*(myQuotes.length));
   //randomNumber equals the value of 0-1 times myQuotes.length rounded down. Math.random will always return a decimal less than one. Since objects start at 0, this is perfect. randomNumber can equal 0-60 with my example.
   
   //This displays the quote on your HTML section with the id quoteDisplay
   document.getElementById('quoteDisplay').innerHTML = myQuotes[randomNumber];
+  
   //If you open the console part, you can see your myQuotes length and the random number. This does nothing except give you information. 
   console.log(myQuotes.length)
   console.log(randomNumber)
 }
+
+//This is what makes the Facebook button function
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
