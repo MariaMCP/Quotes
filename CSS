@@ -2,6 +2,7 @@ body {
   /*Replace the green website address with the background of your choice. DO NOT take out the url("") only replace the website address*/
   background-image: url("http://img01.deviantart.net/6119/i/2011/008/0/7/marauders_map_2_by_penguinofpeace-d36qnj7.jpg")
 }
+
 h1{
   /*This section changes your heading*/
   font-size: 48px;
@@ -10,7 +11,8 @@ h1{
   margin-top: 40px;
   margin-bottom: 30px;   
 }
-div{
+
+#quoteDisplay{
   /*This section changes where the quote will be displayed.*/
   font-size: 30px;
   font-family: Arial;
@@ -22,6 +24,7 @@ div{
   padding:25px;
   text-align:center;
 }
+
 button{
   /*This changes the button's style*/
   background-color: black;
@@ -33,6 +36,7 @@ button{
   margin-left:300px;
   border-radius:10px;
 }
+
 p {
   /*This will change the bottom portion.*/
   font-size:24px;
